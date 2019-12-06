@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/CardView.Light"
+    android:layout_width="350dp"
+    android:layout_height="210dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="350dp"
+        android:layout_height="210dp">
+
+        <TextView
+            android:id="@+id/textViewBooking"
+            android:layout_width="144dp"
+            android:layout_height="29dp"
+            android:layout_gravity="left"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="84dp"
+            android:text="BOOKING REQUEST"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.666"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/lblRoomTypeTitle"
+            android:layout_width="88dp"
+            android:layout_height="24dp"
+            android:layout_gravity="left"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="8dp"
+            android:text="Room Type:"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblstuRoomTitle" />
+
+        <TextView
+            android:id="@+id/lblstuRoomTitle"
+            android:layout_width="88dp"
+            android:layout_height="24dp"
+            android:layout_gravity="left"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="8dp"
+            android:text="Student Email:"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewBooking" />
+
+        <TextView
+            android:id="@+id/lblRoomType"
+            android:layout_width="194dp"
+            android:layout_height="23dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="60dp"
+            android:text="Title"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/lblRoomTypeTitle"
+            app:layout_constraintTop_toBottomOf="@+id/lblStuBookType" />
+
+        <TextView
+            android:id="@+id/lblStuBookType"
+            android:layout_width="194dp"
+            android:layout_height="23dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="52dp"
+            android:text="Title"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.8"
+            app:layout_constraintStart_toEndOf="@+id/lblstuRoomTitle"
+            app:layout_constraintTop_toBottomOf="@+id/textViewBooking" />
+
+        <TextView
+            android:id="@+id/lblStuNumTitle"
+            android:layout_width="120dp"
+            android:layout_height="19dp"
+            android:layout_gravity="left"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="8dp"
+            android:text="Number of Student:"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblRoomTypeTitle" />
+
+        <TextView
+            android:id="@+id/lblStuNum"
+            android:layout_width="116dp"
+            android:layout_height="19dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="96dp"
+            android:text="Title"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/lblStuNumTitle"
+            app:layout_constraintTop_toBottomOf="@+id/lblRoomType" />
+
+        <TextView
+            android:id="@+id/lblDurationTitle"
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:layout_gravity="left"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="8dp"
+            android:text="Booking Duration:"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblStuNumTitle" />
+
+        <TextView
+            android:id="@+id/lblDuration"
+            android:layout_width="116dp"
+            android:layout_height="19dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="132dp"
+            android:text="Title"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/lblDurationTitle"
+            app:layout_constraintTop_toBottomOf="@+id/lblStuNum" />
+
+        <TextView
+            android:id="@+id/lblDateTitle"
+            android:layout_width="120dp"
+            android:layout_height="19dp"
+            android:layout_gravity="left"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="4dp"
+            android:text="Booking Date:"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblDurationTitle" />
+
+        <TextView
+            android:id="@+id/lblStatusBookTitle"
+            android:layout_width="120dp"
+            android:layout_height="19dp"
+            android:layout_gravity="left"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp"
+            android:text="Status:"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblDateTitle"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/lblStatusBook"
+            android:layout_width="110dp"
+            android:layout_height="19dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="168dp"
+            android:layout_marginBottom="8dp"
+            android:text="Title"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/lblStatusBookTitle"
+            app:layout_constraintTop_toBottomOf="@+id/lblDate"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/lblDate"
+            android:layout_width="110dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="156dp"
+            android:text="Title"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.666"
+            app:layout_constraintStart_toEndOf="@+id/lblDateTitle"
+            app:layout_constraintTop_toBottomOf="@+id/lblDuration" />
+        />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

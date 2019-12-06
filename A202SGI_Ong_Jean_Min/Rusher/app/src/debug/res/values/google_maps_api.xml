@@ -1,0 +1,4 @@
+<resources>
+  <!-- Google Map API Key generated at Google Developer Console-->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyAqDGBbAuWL6hQnfZN2Oj_06laK6ElKwRg</string>
+</resources>

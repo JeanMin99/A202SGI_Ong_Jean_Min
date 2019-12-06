@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_requestCheck"
+        android:icon="@drawable/request"
+        android:title="PENDING REQUEST"/>
+
+    <item
+        android:id="@+id/navigation_requestApproved"
+        android:icon="@drawable/approved"
+        android:title="APPROVED REQUEST"/>
+
+</menu>
+
+    <!--android:icon="@drawable/request"-->    <!--android:icon="@drawable/profile"-->

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/CardView.Light"
+    android:layout_width="350dp"
+    android:layout_height="210dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="350dp"
+        android:layout_height="210dp">
+
+        <TextView
+            android:id="@+id/textViewShuttle"
+            android:layout_width="144dp"
+            android:layout_height="38dp"
+            android:layout_gravity="left"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="84dp"
+            android:text="SHUTTLE REQUEST"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.78"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/lblTimeTitle"
+            android:layout_width="88dp"
+            android:layout_height="24dp"
+            android:layout_gravity="left"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Selected Time:"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblStuShuTitle" />
+
+        <TextView
+            android:id="@+id/lblStuShu"
+            android:layout_width="194dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="52dp"
+            android:text="Title"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/lblStuShuTitle"
+            app:layout_constraintTop_toBottomOf="@+id/textViewShuttle" />
+
+        <TextView
+            android:id="@+id/lblStuShuTitle"
+            android:layout_width="88dp"
+            android:layout_height="24dp"
+            android:layout_gravity="left"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Student Email:"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewShuttle" />
+
+        <TextView
+            android:id="@+id/lblTime"
+            android:layout_width="194dp"
+            android:layout_height="23dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="60dp"
+            android:text="Title"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.937"
+            app:layout_constraintStart_toEndOf="@+id/lblTimeTitle"
+            app:layout_constraintTop_toBottomOf="@+id/lblStuShu" />
+
+        <TextView
+            android:id="@+id/lblLocationTitle"
+            android:layout_width="175dp"
+            android:layout_height="18dp"
+            android:layout_gravity="left"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Selected Pick-Up Location:"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblTimeTitle" />
+
+        <TextView
+            android:id="@+id/lblStatusShuTitle"
+            android:layout_width="55dp"
+            android:layout_height="18dp"
+            android:layout_gravity="left"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Status:"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblLocationTitle"
+            app:layout_constraintVertical_bias="0.6" />
+
+        <TextView
+            android:id="@+id/lblLocation"
+            android:layout_width="177dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="52dp"
+            android:text="Title"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.384"
+            app:layout_constraintStart_toEndOf="@+id/lblLocationTitle"
+            app:layout_constraintTop_toBottomOf="@+id/lblTime" />
+
+        <TextView
+            android:id="@+id/lblStatusShu"
+            android:layout_width="177dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="116dp"
+            android:layout_marginBottom="8dp"
+            android:text="Title"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/lblStatusShuTitle"
+            app:layout_constraintTop_toBottomOf="@+id/lblLocation"
+            app:layout_constraintVertical_bias="0.047" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

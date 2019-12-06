@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ApprovedRequestStatus"
+    android:id="@+id/constraintLayout"
+    android:background="#F2E3BA">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarBooking"
+        android:layout_width="418dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayoutBookStatus"
+        android:layout_width="436dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.617"
+        android:background="#A33A47"
+        app:itemBackground="@color/colorPrimary2"
+        app:itemIconTint="#FFFFFF"
+        app:itemTextColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarBooking"
+        app:tabSelectedTextColor="@android:color/white"
+        app:tabTextColor="@android:color/black">
+
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabFoodRequest"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@color/colorPrimary"
+            android:text="ORDER REQUEST"
+            app:tabSelectedTextColor="@android:color/white"
+            app:tabTextColor="@android:color/black" />
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabShuttleRequest"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="SHUTTLE REQUEST" />
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabLeaveRequest"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="LEAVE REQUEST" />
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabBookRequest"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="BOOKING REQUEST" />
+
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPagerBookingStatus"
+        android:layout_width="367dp"
+        android:layout_height="612dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabLayoutBookStatus">
+
+    </androidx.viewpager.widget.ViewPager>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
