@@ -89,7 +89,9 @@ public class ApprovedRequestStatus extends AppCompatActivity {
                 @Override
                 public void onClick(DialogInterface dialog, int back) {
                     //if user pressed "yes", then he is allowed to leave the current page
+                    String data=MainActivity.value;
                     Intent newAct = new Intent(getApplicationContext(),MainActivity.class);
+                    newAct.putExtra("email",data);
                     startActivity(newAct);
 
                 }

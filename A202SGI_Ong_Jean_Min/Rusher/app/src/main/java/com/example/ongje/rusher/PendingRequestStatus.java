@@ -88,8 +88,11 @@ public class PendingRequestStatus extends AppCompatActivity {
             builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int back) {
+                    String data=MainActivity.value;
+
                     //if user pressed "yes", then he is allowed to exit from application
                     Intent newAct = new Intent(getApplicationContext(),MainActivity.class);
+                    newAct.putExtra("email",data);
                     startActivity(newAct);
 
                 }
