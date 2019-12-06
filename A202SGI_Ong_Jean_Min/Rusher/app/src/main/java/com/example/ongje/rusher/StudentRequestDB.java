@@ -245,7 +245,7 @@ public class StudentRequestDB extends SQLiteOpenHelper {
     }
 
     //For lecturer
-    public Cursor getAdminDataBook() //To get all pending leave of absence request send by user
+    public Cursor getAdminDataBook() //To get all pending activity room booking request send by user
     {
         SQLiteDatabase db = this.getReadableDatabase();
         String status="Pending";

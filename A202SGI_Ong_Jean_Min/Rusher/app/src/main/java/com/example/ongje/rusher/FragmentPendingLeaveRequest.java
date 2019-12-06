@@ -18,7 +18,6 @@ import androidx.recyclerview.widget.RecyclerView;
 public class FragmentPendingLeaveRequest extends Fragment {
     StudentRequestDB _db;
     View mView;
-    CheckBox checkbox;
 
     public FragmentPendingLeaveRequest()
     {
